@@ -1,2 +1,2 @@
-# programmer
-a programmer repository
+# bolg
+a programmer repository for bolg
