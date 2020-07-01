@@ -1,0 +1,1371 @@
+export default {
+  armor5: function () {
+    return armor5
+  },
+  armor5Header: function () {
+    return armor5Header
+  },
+  jewelry3Header: function () {
+    return jewelry3Header
+  },
+  jewelry3: function () {
+    return jewelry3
+  },
+  special3Header: function () {
+    return special3Header
+  },
+  special3: function () {
+    return special3
+  },
+  oddSyHeader: function () {
+    return oddSyHeader
+  },
+  oddSy: function () {
+    return oddSy
+  },
+  oddXzHeader: function () {
+    return oddXzHeader
+  },
+  oddXz: function () {
+    return oddXz
+  },
+  oddSeHeader: function () {
+    return oddSeHeader
+  },
+  oddSe: function () {
+    return oddSe
+  }
+}
+
+const oddSyHeader = [{
+  label: '上衣',
+  key: 'sy'
+}, {
+  label: '项链',
+  key: 'xl'
+}, {
+  label: '左槽',
+  key: 'zc'
+}, {
+  label: '神话',
+  key: 'shsy'
+}]
+
+const oddSy = [{
+  id: '128',
+  eName: 'sy',
+  suitName: '深渊',
+  flag: false,
+  items: [{
+    id: '12802',
+    name: '深渊上衣',
+    eName: 'sysz',
+    part: 'sy',
+    flag: false
+  }, {
+    id: '12808',
+    name: '深渊项链',
+    eName: 'syxl',
+    part: 'xl',
+    flag: false
+  }, {
+    id: '12811',
+    name: '深渊左槽',
+    eName: 'syzc',
+    part: 'zc',
+    flag: false
+  }, {
+    id: '12806',
+    name: '深渊神话上衣',
+    eName: 'syshsy',
+    part: 'sy',
+    flag: false
+  }]
+}, {
+  id: '129',
+  eName: 'sz',
+  suitName: '圣者',
+  flag: false,
+  items: [{
+    id: '12902',
+    name: '圣者上衣',
+    eName: 'szsz',
+    part: 'sz',
+    flag: false
+  }, {
+    id: '12908',
+    name: '圣者项链',
+    eName: 'szxl',
+    part: 'xl',
+    flag: false
+  }, {
+    id: '12911',
+    name: '圣者左槽',
+    eName: 'szzc',
+    part: 'zc',
+    flag: false
+  }, {
+    id: '12906',
+    name: '圣者神话上衣',
+    eName: 'szshsz',
+    part: 'sz',
+    flag: false
+  }]
+}, {
+  id: '130',
+  eName: 'my',
+  suitName: '命运',
+  flag: false,
+  items: [{
+    id: '13002',
+    name: '命运上衣',
+    eName: 'mymy',
+    part: 'my',
+    flag: false
+  }, {
+    id: '13008',
+    name: '命运项链',
+    eName: 'myxl',
+    part: 'xl',
+    flag: false
+  }, {
+    id: '13011',
+    name: '命运左槽',
+    eName: 'myzc',
+    part: 'zc',
+    flag: false
+  }, {
+    id: '13006',
+    name: '命运神话上衣',
+    eName: 'myshsy',
+    part: 'sy',
+    flag: false
+  }]
+}, {
+  id: '131',
+  eName: 'fn',
+  suitName: '愤怒',
+  flag: false,
+  items: [{
+    id: '13102',
+    name: '愤怒上衣',
+    eName: 'fnsy',
+    part: 'sy',
+    flag: false
+  }, {
+    id: '13108',
+    name: '愤怒项链',
+    eName: 'fnxl',
+    part: 'xl',
+    flag: false
+  }, {
+    id: '13111',
+    name: '愤怒左槽',
+    eName: 'fnzc',
+    part: 'zc',
+    flag: false
+  }, {
+    id: '13106',
+    name: '愤怒神话上衣',
+    eName: 'fnshfn',
+    part: 'fn',
+    flag: false
+  }]
+}]
+
+const oddXzHeader = [{
+  label: '下装',
+  key: 'xz'
+}, {
+  label: '手镯',
+  key: 'sz'
+}, {
+  label: '右槽',
+  key: 'yc'
+}, {
+  label: '神话',
+  key: 'shsz'
+}]
+
+const oddXz = [{
+  id: '124',
+  eName: 'hmf',
+  suitName: '黑魔法',
+  flag: false,
+  items: [{
+    id: '12403',
+    name: '黑魔法下装',
+    eName: 'hmfsy',
+    part: 'xz',
+    flag: false
+  }, {
+    id: '12407',
+    name: '黑魔法手镯',
+    eName: 'hmfxl',
+    part: 'sz',
+    flag: false
+  }, {
+    id: '12412',
+    name: '黑魔法右槽',
+    eName: 'hmfzc',
+    part: 'yc',
+    flag: false
+  }, {
+    id: '12410',
+    name: '黑魔法神话手镯',
+    eName: 'hmfshsz',
+    part: 'sz',
+    flag: false
+  }]
+}, {
+  id: '125',
+  eName: 'sk',
+  suitName: '时空',
+  flag: false,
+  items: [{
+    id: '12503',
+    name: '时空下装',
+    eName: 'sksy',
+    part: 'xz',
+    flag: false
+  }, {
+    id: '12507',
+    name: '时空手镯',
+    eName: 'skxl',
+    part: 'sz',
+    flag: false
+  }, {
+    id: '12512',
+    name: '时空右槽',
+    eName: 'skzc',
+    part: 'yc',
+    flag: false
+  }, {
+    id: '12510',
+    name: '时空神话手镯',
+    eName: 'skshsz',
+    part: 'sz',
+    flag: false
+  }]
+}, {
+  id: '126',
+  eName: 'nh',
+  suitName: '呐喊',
+  flag: false,
+  items: [{
+    id: '12603',
+    name: '呐喊下装',
+    eName: 'nhsy',
+    part: 'xz',
+    flag: false
+  }, {
+    id: '12607',
+    name: '呐喊手镯',
+    eName: 'nhxl',
+    part: 'sz',
+    flag: false
+  }, {
+    id: '12612',
+    name: '呐喊右槽',
+    eName: 'nhzc',
+    part: 'yc',
+    flag: false
+  }, {
+    id: '12610',
+    name: '呐喊神话手镯',
+    eName: 'nhshsz',
+    part: 'sz',
+    flag: false
+  }]
+}, {
+  id: '127',
+  eName: 'kl',
+  suitName: '狂乱',
+  flag: false,
+  items: [{
+    id: '12703',
+    name: '狂乱下装',
+    eName: 'klsy',
+    part: 'xz',
+    flag: false
+  }, {
+    id: '12707',
+    name: '狂乱手镯',
+    eName: 'klxl',
+    part: 'sz',
+    flag: false
+  }, {
+    id: '12712',
+    name: '狂乱右槽',
+    eName: 'klzc',
+    part: 'yc',
+    flag: false
+  }, {
+    id: '12710',
+    name: '狂乱神话手镯',
+    eName: 'klshsz',
+    part: 'sz',
+    flag: false
+  }]
+}]
+
+const oddSeHeader = [{
+  label: '鞋子',
+  key: 'se'
+}, {
+  label: '戒指',
+  key: 'jz'
+}, {
+  label: '耳环',
+  key: 'eh'
+}, {
+  label: '神话',
+  key: 'sheh'
+}]
+
+const oddSe = [{
+  id: '132',
+  eName: 'qdz',
+  suitName: '求道者',
+  flag: false,
+  items: [{
+    id: '13205',
+    name: '求道者鞋子',
+    eName: 'qdzs',
+    part: 'se',
+    flag: false
+  }, {
+    id: '13209',
+    name: '求道者戒指',
+    eName: 'qdzjz',
+    part: 'jz',
+    flag: false
+  }, {
+    id: '13213',
+    name: '求道者耳环',
+    eName: 'qdzeh',
+    part: 'eh',
+    flag: false
+  }, {
+    id: '13214',
+    name: '求道者神话耳环',
+    eName: 'qdzsheh',
+    part: 'eh',
+    flag: false
+  }]
+}, {
+  id: '133',
+  eName: 'cy',
+  suitName: '次元',
+  flag: false,
+  items: [{
+    id: '13305',
+    name: '次元鞋子',
+    eName: 'cyse',
+    part: 'se',
+    flag: false
+  }, {
+    id: '13309',
+    name: '次元戒指',
+    eName: 'cyjz',
+    part: 'jz',
+    flag: false
+  }, {
+    id: '13313',
+    name: '次元耳环',
+    eName: 'cyeh',
+    part: 'eh',
+    flag: false
+  }, {
+    id: '13314',
+    name: '次元神话耳环',
+    eName: 'cysheh',
+    part: 'eh',
+    flag: false
+  }]
+}, {
+  id: '134',
+  eName: 'tm',
+  suitName: '天命',
+  flag: false,
+  items: [{
+    id: '13405',
+    name: '天命鞋子',
+    eName: 'tmse',
+    part: 'se',
+    flag: false
+  }, {
+    id: '13409',
+    name: '天命戒指',
+    eName: 'tmjz',
+    part: 'jz',
+    flag: false
+  }, {
+    id: '13413',
+    name: '天命耳环',
+    eName: 'tmeh',
+    part: 'eh',
+    flag: false
+  }, {
+    id: '13414',
+    name: '天命神话耳环',
+    eName: 'tmsheh',
+    part: 'eh',
+    flag: false
+  }]
+}, {
+  id: '135',
+  eName: 'bj',
+  suitName: '悲剧',
+  flag: false,
+  items: [{
+    id: '13505',
+    name: '悲剧鞋子',
+    eName: 'bjs',
+    part: 'se',
+    flag: false
+  }, {
+    id: '13509',
+    name: '悲剧戒指',
+    eName: 'bjjz',
+    part: 'jz',
+    flag: false
+  }, {
+    id: '13513',
+    name: '悲剧耳环',
+    eName: 'bjeh',
+    part: 'eh',
+    flag: false
+  }, {
+    id: '13514',
+    name: '悲剧神话耳环',
+    eName: 'bjsheh',
+    part: 'eh',
+    flag: false
+  }]
+}]
+
+const armor5Header = [{
+  label: '头肩',
+  key: 'tj'
+}, {
+  label: '上衣',
+  key: 'sy'
+}, {
+  label: '下装',
+  key: 'xz'
+}, {
+  label: '腰带',
+  key: 'yd'
+}, {
+  label: '鞋子',
+  key: 'se'
+}, {
+  label: '神话',
+  key: 'shys'
+}]
+
+const armor5 = [{
+  id: '101',
+  eName: 'djs',
+  suitName: '大祭司',
+  flag: false,
+  items: [{
+    id: '10101',
+    name: '大祭司头肩',
+    eName: 'djstj',
+    part: 'tj',
+    flag: false
+  }, {
+    id: '10102',
+    name: '大祭司上衣',
+    eName: 'djssy',
+    part: 'sy',
+    flag: false
+  }, {
+    id: '10103',
+    name: '大祭司下装',
+    eName: 'djsxz',
+    part: 'xz',
+    flag: false
+  }, {
+    id: '10104',
+    name: '大祭司腰带',
+    eName: 'djsyd',
+    part: 'yd',
+    flag: false
+  }, {
+    id: '10105',
+    name: '大祭司鞋子',
+    eName: 'djsse',
+    part: 'st',
+    flag: false
+  }, {
+    id: '10106',
+    name: '大祭司神话上衣',
+    eName: 'djsshys',
+    part: 'sy',
+    flag: false
+  }]
+}, {
+  id: '102',
+  eName: 'mfs',
+  suitName: '魔法师',
+  flag: false,
+  items: [{
+    id: '10201',
+    name: '魔法师头肩',
+    eName: 'mfstj',
+    part: 'tj',
+    flag: false
+  }, {
+    id: '10202',
+    name: '魔法师上衣',
+    eName: 'mfssy',
+    part: 'sy',
+    flag: false
+  }, {
+    id: '10203',
+    name: '魔法师下装',
+    eName: 'mfsxz',
+    part: 'xz',
+    flag: false
+  }, {
+    id: '10204',
+    name: '魔法师腰带',
+    eName: 'mfsyd',
+    part: 'yd',
+    flag: false
+  }, {
+    id: '10205',
+    name: '魔法师鞋子',
+    eName: 'mfsse',
+    part: 'st',
+    flag: false
+  }, {
+    id: '10206',
+    name: '魔法师神话上衣',
+    eName: 'mfsshsy',
+    part: 'sy',
+    flag: false
+  }]
+}, {
+  id: '103',
+  eName: 'wj',
+  suitName: '舞姬',
+  flag: false,
+  items: [{
+    id: '10301',
+    name: '舞姬头肩',
+    eName: 'wjtj',
+    part: 'tj',
+    flag: false
+  }, {
+    id: '10302',
+    name: '舞姬上衣',
+    eName: 'wjsy',
+    part: 'sy',
+    flag: false
+  }, {
+    id: '10303',
+    name: '舞姬下装',
+    eName: 'wjxz',
+    part: 'xz',
+    flag: false
+  }, {
+    id: '10304',
+    name: '舞姬腰带',
+    eName: 'wjyd',
+    part: 'yd',
+    flag: false
+  }, {
+    id: '10305',
+    name: '舞姬鞋子',
+    eName: 'wjse',
+    part: 'se',
+    flag: false
+  }, {
+    id: '10306',
+    name: '舞姬神话上衣',
+    eName: 'wjshsy',
+    part: 'sy',
+    flag: false
+  }]
+}, {
+  id: '104',
+  eName: 'yy',
+  suitName: '阴影',
+  flag: false,
+  items: [{
+    id: '10401',
+    name: '阴影头肩',
+    eName: 'yytj',
+    part: 'tj',
+    flag: false
+  }, {
+    id: '10402',
+    name: '阴影上衣',
+    eName: 'yysy',
+    part: 'sy',
+    flag: false
+  }, {
+    id: '10403',
+    name: '阴影下装',
+    eName: 'yyxz',
+    part: 'xz',
+    flag: false
+  }, {
+    id: '10404',
+    name: '阴影腰带',
+    eName: 'yyyd',
+    part: 'yd',
+    flag: false
+  }, {
+    id: '10405',
+    name: '阴影鞋子',
+    eName: 'yyse',
+    part: 'se',
+    flag: false
+  }, {
+    id: '10406',
+    name: '阴影神话上衣',
+    eName: 'yyshsy',
+    part: 'sy',
+    flag: false
+  }]
+}, {
+  id: '105',
+  eName: 'cjz',
+  suitName: '裁决者',
+  flag: false,
+  items: [{
+    id: '10501',
+    name: '裁决者头肩',
+    eName: 'cjztj',
+    part: 'tj',
+    flag: false
+  }, {
+    id: '10502',
+    name: '裁决者上衣',
+    eName: 'cjzsy',
+    part: 'sy',
+    flag: false
+  }, {
+    id: '10503',
+    name: '裁决者下装',
+    eName: 'cjzxz',
+    part: 'xz',
+    flag: false
+  }, {
+    id: '10504',
+    name: '裁决者腰带',
+    eName: 'cjzyd',
+    part: 'yd',
+    flag: false
+  }, {
+    id: '10505',
+    name: '裁决者鞋子',
+    eName: 'cjzse',
+    part: 'se',
+    flag: false
+  }, {
+    id: '10506',
+    name: '裁决者神话上衣',
+    eName: 'cjzshsy',
+    part: 'sy',
+    flag: false
+  }]
+}, {
+  id: '106',
+  eName: 'lxxh',
+  suitName: '龙血玄黄',
+  flag: false,
+  items: [{
+    id: '10601',
+    name: '龙血玄黄头肩',
+    eName: 'lxxhtj',
+    part: 'tj',
+    flag: false
+  }, {
+    id: '10602',
+    name: '龙血玄黄上衣',
+    eName: 'lxxhsy',
+    part: 'sy',
+    flag: false
+  }, {
+    id: '10603',
+    name: '龙血玄黄下装',
+    eName: 'lxxhxz',
+    part: 'xz',
+    flag: false
+  }, {
+    id: '10604',
+    name: '龙血玄黄腰带',
+    eName: 'lxxhyd',
+    part: 'yd',
+    flag: false
+  }, {
+    id: '10605',
+    name: '龙血玄黄鞋子',
+    eName: 'lxxhse',
+    part: 'se',
+    flag: false
+  }, {
+    id: '10606',
+    name: '龙血玄黄神话上衣',
+    eName: 'lxxhshsy',
+    part: 'sy',
+    flag: false
+  }]
+}, {
+  id: '107',
+  eName: 'sm',
+  suitName: '沙漠',
+  flag: false,
+  items: [{
+    id: '10701',
+    name: '沙漠头肩',
+    eName: 'smtj',
+    part: 'tj',
+    flag: false
+  }, {
+    id: '10702',
+    name: '沙漠上衣',
+    eName: 'smsy',
+    part: 'sy',
+    flag: false
+  }, {
+    id: '10703',
+    name: '沙漠下装',
+    eName: 'smxz',
+    part: 'xz',
+    flag: false
+  }, {
+    id: '10704',
+    name: '沙漠腰带',
+    eName: 'smyd',
+    part: 'yd',
+    flag: false
+  }, {
+    id: '10705',
+    name: '沙漠鞋子',
+    eName: 'smse',
+    part: 'se',
+    flag: false
+  }, {
+    id: '10706',
+    name: '沙漠神话上衣',
+    eName: 'smshsy',
+    part: 'sy',
+    flag: false
+  }]
+}, {
+  id: '108',
+  eName: 'zy',
+  suitName: '炙炎',
+  flag: false,
+  items: [{
+    id: '10801',
+    name: '炙炎头肩',
+    eName: 'zytj',
+    part: 'tj',
+    flag: false
+  }, {
+    id: '10802',
+    name: '炙炎上衣',
+    eName: 'zysy',
+    part: 'sy',
+    flag: false
+  }, {
+    id: '10803',
+    name: '炙炎下装',
+    eName: 'zyxz',
+    part: 'xz',
+    flag: false
+  }, {
+    id: '10804',
+    name: '炙炎腰带',
+    eName: 'zyyd',
+    part: 'yd',
+    flag: false
+  }, {
+    id: '10805',
+    name: '炙炎鞋子',
+    eName: 'zyse',
+    part: 'se',
+    flag: false
+  }, {
+    id: '10806',
+    name: '炙炎神话上衣',
+    eName: 'zyshsy',
+    part: 'sy',
+    flag: false
+  }]
+}, {
+  id: '109',
+  eName: 'qt',
+  suitName: '擎天',
+  flag: false,
+  items: [{
+    id: '10901',
+    name: '擎天头肩',
+    eName: 'qttj',
+    part: 'tj',
+    flag: false
+  }, {
+    id: '10902',
+    name: '擎天上衣',
+    eName: 'qtsy',
+    part: 'sy',
+    flag: false
+  }, {
+    id: '10903',
+    name: '擎天下装',
+    eName: 'qtxz',
+    part: 'xz',
+    flag: false
+  }, {
+    id: '10904',
+    name: '擎天腰带',
+    eName: 'qtyd',
+    part: 'yd',
+    flag: false
+  }, {
+    id: '10905',
+    name: '擎天鞋子',
+    eName: 'qtse',
+    part: 'se',
+    flag: false
+  }, {
+    id: '10906',
+    name: '擎天神话上衣',
+    eName: 'qtshsy',
+    part: 'sy',
+    flag: false
+  }]
+}, {
+  id: '110',
+  eName: 'dy',
+  suitName: '地狱',
+  flag: false,
+  items: [{
+    id: '11001',
+    name: '地狱头肩',
+    eName: 'dytj',
+    part: 'tj',
+    flag: false
+  }, {
+    id: '11002',
+    name: '地狱上衣',
+    eName: 'dysy',
+    part: 'sy',
+    flag: false
+  }, {
+    id: '11003',
+    name: '地狱下装',
+    eName: 'dyxz',
+    part: 'xz',
+    flag: false
+  }, {
+    id: '11004',
+    name: '地狱腰带',
+    eName: 'dyyd',
+    part: 'yd',
+    flag: false
+  }, {
+    id: '11005',
+    name: '地狱鞋子',
+    eName: 'dyse',
+    part: 'se',
+    flag: false
+  }, {
+    id: '11006',
+    name: '地狱神话上衣',
+    eName: 'dyshsy',
+    part: 'sy',
+    flag: false
+  }]
+}, {
+  id: '111',
+  eName: 'tj',
+  suitName: '铁匠',
+  flag: false,
+  items: [{
+    id: '11101',
+    name: '铁匠头肩',
+    eName: 'tjtj',
+    part: 'tj',
+    flag: false
+  }, {
+    id: '11102',
+    name: '铁匠上衣',
+    eName: 'tjsy',
+    part: 'sy',
+    flag: false
+  }, {
+    id: '11103',
+    name: '铁匠下装',
+    eName: 'tjxz',
+    part: 'xz',
+    flag: false
+  }, {
+    id: '11104',
+    name: '铁匠腰带',
+    eName: 'tjyd',
+    part: 'yd',
+    flag: false
+  }, {
+    id: '11105',
+    name: '铁匠鞋子',
+    eName: 'tjse',
+    part: 'se',
+    flag: false
+  }, {
+    id: '11106',
+    name: '铁匠神话上衣',
+    eName: 'tjshsy',
+    part: 'sy',
+    flag: false
+  }]
+}, {
+  id: '112',
+  eName: 'jj',
+  suitName: '荆棘',
+  flag: false,
+  items: [{
+    id: '11201',
+    name: '荆棘头肩',
+    eName: 'jjjj',
+    part: 'jj',
+    flag: false
+  }, {
+    id: '11202',
+    name: '荆棘上衣',
+    eName: 'jjsy',
+    part: 'sy',
+    flag: false
+  }, {
+    id: '11203',
+    name: '荆棘下装',
+    eName: 'jjxz',
+    part: 'xz',
+    flag: false
+  }, {
+    id: '11204',
+    name: '荆棘腰带',
+    eName: 'jjyd',
+    part: 'yd',
+    flag: false
+  }, {
+    id: '11205',
+    name: '荆棘鞋子',
+    eName: 'jjse',
+    part: 'se',
+    flag: false
+  }, {
+    id: '11206',
+    name: '荆棘神话上衣',
+    eName: 'jjshsy',
+    part: 'sy',
+    flag: false
+  }]
+}, {
+  id: '113',
+  eName: 'bx',
+  suitName: '不息',
+  flag: false,
+  items: [{
+    id: '11301',
+    name: '不息头肩',
+    eName: 'bxbx',
+    part: 'bx',
+    flag: false
+  }, {
+    id: '11302',
+    name: '不息上衣',
+    eName: 'bxsy',
+    part: 'sy',
+    flag: false
+  }, {
+    id: '11303',
+    name: '不息下装',
+    eName: 'bxxz',
+    part: 'xz',
+    flag: false
+  }, {
+    id: '11304',
+    name: '不息腰带',
+    eName: 'bxyd',
+    part: 'yd',
+    flag: false
+  }, {
+    id: '11305',
+    name: '不息鞋子',
+    eName: 'bxse',
+    part: 'se',
+    flag: false
+  }, {
+    id: '11306',
+    name: '不息神话上衣',
+    eName: 'bxshsy',
+    part: 'sy',
+    flag: false
+  }]
+}, {
+  id: '114',
+  eName: 'ql',
+  suitName: '歧路',
+  flag: false,
+  items: [{
+    id: '11401',
+    name: '歧路头肩',
+    eName: 'qlql',
+    part: 'ql',
+    flag: false
+  }, {
+    id: '11402',
+    name: '歧路上衣',
+    eName: 'qlsy',
+    part: 'sy',
+    flag: false
+  }, {
+    id: '11403',
+    name: '歧路下装',
+    eName: 'qlxz',
+    part: 'xz',
+    flag: false
+  }, {
+    id: '11404',
+    name: '歧路腰带',
+    eName: 'qlyd',
+    part: 'yd',
+    flag: false
+  }, {
+    id: '11405',
+    name: '歧路鞋子',
+    eName: 'qlse',
+    part: 'se',
+    flag: false
+  }, {
+    id: '11406',
+    name: '歧路神话上衣',
+    eName: 'qlshsy',
+    part: 'sy',
+    flag: false
+  }]
+}, {
+  id: '115',
+  eName: 'dzr',
+  suitName: '大自然',
+  flag: false,
+  items: [{
+    id: '11501',
+    name: '大自然头肩',
+    eName: 'dzrdzr',
+    part: 'dzr',
+    flag: false
+  }, {
+    id: '11502',
+    name: '大自然上衣',
+    eName: 'dzrsy',
+    part: 'sy',
+    flag: false
+  }, {
+    id: '11503',
+    name: '大自然下装',
+    eName: 'dzrxz',
+    part: 'xz',
+    flag: false
+  }, {
+    id: '11504',
+    name: '大自然腰带',
+    eName: 'dzryd',
+    part: 'yd',
+    flag: false
+  }, {
+    id: '11505',
+    name: '大自然鞋子',
+    eName: 'dzrse',
+    part: 'se',
+    flag: false
+  }, {
+    id: '11506',
+    name: '大自然神话上衣',
+    eName: 'dzrshsy',
+    part: 'sy',
+    flag: false
+  }]
+}
+]
+
+const jewelry3Header = [{
+  label: '手镯',
+  key: 'sz'
+}, {
+  label: '项链',
+  key: 'xl'
+}, {
+  label: '戒指',
+  key: 'jz'
+}, {
+  label: '神话',
+  key: 'shsz'
+}]
+
+const jewelry3 = [{
+  id: '116',
+  eName: 'cfss',
+  suitName: '尘封术式',
+  flag: false,
+  items: [{
+    id: '11607',
+    name: '尘封术式手镯',
+    eName: 'cfsssz',
+    part: 'sz',
+    flag: false
+  }, {
+    id: '11608',
+    name: '尘封术式项链',
+    eName: 'cfssxl',
+    part: 'xl',
+    flag: false
+  }, {
+    id: '11609',
+    name: '尘封术式戒指',
+    eName: 'cfssjz',
+    part: 'jz',
+    flag: false
+  }, {
+    id: '11610',
+    name: '尘封术式神话手镯',
+    eName: 'cfssshsz',
+    part: 'sz',
+    flag: false
+  }]
+}, {
+  id: '117',
+  eName: 'px',
+  suitName: '破晓',
+  flag: false,
+  items: [{
+    id: '11707',
+    name: '破晓手镯',
+    eName: 'pxsz',
+    part: 'sz',
+    flag: false
+  }, {
+    id: '11708',
+    name: '破晓项链',
+    eName: 'pxxl',
+    part: 'xl',
+    flag: false
+  }, {
+    id: '11709',
+    name: '破晓戒指',
+    eName: 'pxjz',
+    part: 'jz',
+    flag: false
+  }, {
+    id: '11710',
+    name: '破晓神话手镯',
+    eName: 'pxshsz',
+    part: 'sz',
+    flag: false
+  }]
+}, {
+  id: '118',
+  eName: 'sj',
+  suitName: '三角',
+  flag: false,
+  items: [{
+    id: '11807',
+    name: '三角手镯',
+    eName: 'sjsz',
+    part: 'sz',
+    flag: false
+  }, {
+    id: '11808',
+    name: '三角项链',
+    eName: 'sjxl',
+    part: 'xl',
+    flag: false
+  }, {
+    id: '11809',
+    name: '三角戒指',
+    eName: 'sjjz',
+    part: 'jz',
+    flag: false
+  }, {
+    id: '11810',
+    name: '三角神话手镯',
+    eName: 'sjshsz',
+    part: 'sz',
+    flag: false
+  }]
+}, {
+  id: '119',
+  eName: 'qn',
+  suitName: '权能',
+  flag: false,
+  items: [{
+    id: '11907',
+    name: '权能手镯',
+    eName: 'qnsz',
+    part: 'sz',
+    flag: false
+  }, {
+    id: '11908',
+    name: '权能项链',
+    eName: 'qnxl',
+    part: 'xl',
+    flag: false
+  }, {
+    id: '11909',
+    name: '权能戒指',
+    eName: 'qnjz',
+    part: 'jz',
+    flag: false
+  }, {
+    id: '11910',
+    name: '权能神话手镯',
+    eName: 'qnshjz',
+    part: 'sz',
+    flag: false
+  }]
+}]
+
+const special3Header = [{
+  label: '左槽',
+  key: 'zc'
+}, {
+  label: '右槽',
+  key: 'yc'
+}, {
+  label: '耳环',
+  key: 'eh'
+}, {
+  label: '神话',
+  key: 'sh'
+}]
+
+const special3 = [{
+  id: '120',
+  eName: 'js',
+  suitName: '军神',
+  flag: false,
+  items: [{
+    id: '12011',
+    name: '军神左槽',
+    eName: 'jszc',
+    part: 'zc',
+    flag: false
+  }, {
+    id: '12012',
+    name: '军神右槽',
+    eName: 'jsyc',
+    part: 'yc',
+    flag: false
+  }, {
+    id: '12013',
+    name: '军神耳环',
+    eName: 'jseh',
+    part: 'eh',
+    flag: false
+  }, {
+    id: '12014',
+    name: '军神神话耳环',
+    eName: 'jssheh',
+    part: 'eh',
+    flag: false
+  }]
+}, {
+  id: '121',
+  eName: 'lb',
+  suitName: '灵宝',
+  flag: false,
+  items: [{
+    id: '12111',
+    name: '灵宝左槽',
+    eName: 'lbzc',
+    part: 'zc',
+    flag: false
+  }, {
+    id: '12112',
+    name: '灵宝右槽',
+    eName: 'lbyc',
+    part: 'yc',
+    flag: false
+  }, {
+    id: '12113',
+    name: '灵宝耳环',
+    eName: 'lbeh',
+    part: 'eh',
+    flag: false
+  }, {
+    id: '12114',
+    name: '灵宝神话耳环',
+    eName: 'lbsheh',
+    part: 'eh',
+    flag: false
+  }]
+}, {
+  id: '122',
+  eName: 'sj',
+  suitName: '时间',
+  flag: false,
+  items: [{
+    id: '12211',
+    name: '时间左槽',
+    eName: 'sjzc',
+    part: 'zc',
+    flag: false
+  }, {
+    id: '12212',
+    name: '时间右槽',
+    eName: 'sjyc',
+    part: 'yc',
+    flag: false
+  }, {
+    id: '12213',
+    name: '时间耳环',
+    eName: 'sjeh',
+    part: 'eh',
+    flag: false
+  }, {
+    id: '12214',
+    name: '时间神话耳环',
+    eName: 'sjsheh',
+    part: 'eh',
+    flag: false
+  }]
+}, {
+  id: '123',
+  eName: 'nl',
+  suitName: '能量',
+  flag: false,
+  items: [{
+    id: '12311',
+    name: '能量左槽',
+    eName: 'nlcz',
+    part: 'cz',
+    flag: false
+  }, {
+    id: '12312',
+    name: '能量右槽',
+    eName: 'nlyc',
+    part: 'yc',
+    flag: false
+  }, {
+    id: '12313',
+    name: '能量耳环',
+    eName: 'nleh',
+    part: 'eh',
+    flag: false
+  }, {
+    id: '12314',
+    name: '能量神话耳环',
+    eName: 'lbsheh',
+    part: 'eh',
+    flag: false
+  }]
+}]
