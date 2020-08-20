@@ -1,18 +1,13 @@
 import Axios from 'axios'
-import { Message } from 'element-ui'
-import Router from '../router'
-import QS from 'qs'
+import {Message} from 'element-ui'
+import Router from '@/router/router'
 // 超时响应
-Axios.defaults.timeout = 10000
+Axios.defaults.timeout = 5000
 // 配置请求头
-Axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8'
-// 环境基础URL
-Axios.defaults.baseURL = '/api'
+Axios.defaults.headers.post['Content-Type'] = 'application/json;charset=UTF-8'
 
 // 跳转登录页面 - 登录返回处理页面
-function toLogin () {
-  // eslint-disable-next-line no-undef
-  // console.log(this.router.query)
+function toLogin() {
   Router.replace({
     path: '/login',
     query: {
@@ -24,22 +19,15 @@ function toLogin () {
 // 请求拦截器
 Axios.interceptors.request.use(
   request => {
-    const token = localStorage.getItem('token')
-    token && (request.headers.Authorization = token)
+    // const token = localStorage.getItem('token')
+    // token && (request.headers.Authorization = token)
     return request
   },
   error => Promise.error(error))
 
 // 响应拦截器
 Axios.interceptors.response.use(response => {
-  console.log(response)
-  if (response.data.status === 200) {
-    // 原封不动封装返回
-    return Promise.resolve(response)
-  } else {
-    // 推送下一步
-    return Promise.reject(response)
-  }
+  return response.data.status === 200 ? Promise.resolve(response) : romise.reject(response)
 }, error => {
   if (error.response.status) {
     switch (error.response.status) {
@@ -82,12 +70,11 @@ Axios.interceptors.response.use(response => {
   }
 })
 export default {
+  name: 'AxiosUtil',
   // Get请求
-  get (url, params) {
+  get(url, params) {
     return new Promise((resolve, reject) => {
-      Axios.get(url, {
-        params: params
-      }).then(res => {
+      Axios.get(url, {params: params}).then(res => {
         resolve(res.data)
       }).catch(err => {
         reject(err.data)
@@ -95,39 +82,34 @@ export default {
     })
   },
   // Post请求
-  post (url, params) {
+  post(url, params) {
     return new Promise((resolve, reject) => {
-      Axios.post(url, QS.stringify(params))
-        .then(res => {
-          resolve(res.data)
-        })
-        .catch(err => {
-          reject(err.data)
-        })
+      Axios.post(url, params).then(res => {
+        resolve(res.data)
+      }).catch(err => {
+        reject(err.data)
+      })
     })
   },
   // Put请求
-  put (url, params) {
+  put(url, params) {
+    console.log(params)
     return new Promise((resolve, reject) => {
-      Axios.put(url, QS.stringify(params))
-        .then(res => {
-          resolve(res.data)
-        })
-        .catch(err => {
-          reject(err.data)
-        })
+      Axios.put(url, params).then(res => {
+        resolve(res.data)
+      }).catch(err => {
+        reject(err.data)
+      })
     })
   },
   // Delete请求
-  del (url, params) {
+  delete(url, params) {
     return new Promise((resolve, reject) => {
-      Axios.delete(url, { data: params })
-        .then(res => {
-          resolve(res.data)
-        })
-        .catch(err => {
-          reject(err.data)
-        })
+      Axios.delete(url, {data: params}).then(res => {
+        resolve(res.data)
+      }).catch(err => {
+        reject(err.data)
+      })
     })
   }
 }
